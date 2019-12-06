@@ -1,0 +1,61 @@
+:host ::ng-deep .gb-sidenav {
+  flex: 0 0 180px;
+  background: #132644;
+  height: 100%;
+  max-width: 14%;
+  position: fixed;
+  z-index: 950;
+  margin-left: -4px;
+  margin-top: -4px;
+
+  .list-group-item.gb-sidenav-items {
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    color: lighten(#3a3f51, 50%);
+    border-bottom: thin solid darken(#3a3f51, 10%);
+    margin-top: 0;
+  }
+
+  .list-group.gb-sidenav.bg {
+    width: 13%;
+  }
+
+  .gb-sidenav i {
+    padding: 5px;
+  }
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  h5.list-group-item.gb-sidenav-items {
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(#fff, 0.1);
+  }
+
+  button.list-group-item.gb-sidenav-items {
+    &:hover,
+    &:focus {
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      font-weight: bold;
+
+      .gb-sidenav i {
+        &:active {
+          color: goldenrod;
+        }
+      }
+    }
+
+    &.active {
+      color: goldenrod;
+      font-weight: bold;
+    }
+  }
+}
+

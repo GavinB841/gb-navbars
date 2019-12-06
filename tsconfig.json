@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "gb-sidenav": [
+        "dist/gb-sidenav"
+      ],
+      "gb-sidenav/*": [
+        "dist/gb-sidenav/*"
+      ]
+    }
   }
 }
